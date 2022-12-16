@@ -34,12 +34,6 @@ class Feedback extends React.Component {
       })
     }
 
-    handelTotal = (event)=>{
-      this.setState ((prevState) => ({
-        total: prevState.bad + prevState.neutral,
-      }));
-    };
-
     render(){
       const { good, neutral, bad } = this.state;
       const total = good + neutral + bad
